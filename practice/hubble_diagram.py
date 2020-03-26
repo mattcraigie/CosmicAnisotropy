@@ -7,6 +7,7 @@ import data_maker
 
 
 def plot_data(ax, data):
+    # can either be logged or unlogged
     data_z = data[0]
     data_mag = data[1]
 
@@ -14,26 +15,29 @@ def plot_data(ax, data):
     return
 
 
-def plot_model(ax, model):
-    zrange = np.linspace(0, 1, 200)
-    mags = model(zrange)
-
+def plot_model(ax, model, cosmoparams):
+    zrange = np.linspace(0.01, 1, 200)
+    mags = np.array([model(i, cosmoparams) for i in zrange])
     ax.plot(zrange, mags)
     return
 
 
 def main_plot():
-    data = data_maker.get_data()
-    model = model_maker.get_model()
+    cosmoparams = 70, 0.2, 0.8
+    model = model_maker.basic_model
+
+    data = data_maker.get_data(model, cosmoparams)
 
     fig, ax = plt.subplots()
 
     plot_data(ax, data)
-    plot_model(ax, model)
+    plot_model(ax, model, cosmoparams)
 
     # decoration
     plt.xlabel("z")
-    plt.ylabel("mag")
+    plt.ylabel("$\mu$")
+    plt.xscale("log")
+    plt.xlim(0.01, 1)
 
     plt.show()
 
