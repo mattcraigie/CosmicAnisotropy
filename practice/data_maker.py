@@ -12,7 +12,7 @@ def get_data(model, cosmoparams):
     mags = np.array([model(i, cosmoparams) for i in z])
     print(mags)
     # adding noise
-    sigma = 0.05  # mag
+    sigma = 0.1  # mag
     noise = np.random.normal(0.01, sigma, n)
     mags += noise
 
