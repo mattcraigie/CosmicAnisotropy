@@ -10,9 +10,9 @@ flat_lcdm_params = (67.7, 0.31, 0.69)
 model = model_maker.basic_model
 data, sigma_data = data_maker.get_data(model, flat_lcdm_params)
 
-H0_range = np.linspace(65, 70, 20)
-omega_m_range = np.linspace(0.25, 0.35, 20)
-omega_lambda_range = np.linspace(0.65, 0.75, 20)
+H0_range = np.linspace(65, 70, 10)
+omega_m_range = np.linspace(0.25, 0.35, 10)
+omega_lambda_range = np.linspace(0.65, 0.75, 10)
 
 combinations = np.array(np.meshgrid(H0_range, omega_m_range, omega_lambda_range)).T.reshape(-1, 3)
 
