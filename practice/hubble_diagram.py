@@ -6,12 +6,12 @@ import model_maker
 import data_maker
 
 
-def plot_data(ax, data):
+def plot_data(ax, data, err):
     # can either be logged or unlogged
     data_z = data[0]
     data_mag = data[1]
 
-    ax.scatter(data_z, data_mag, s=10, alpha=0.5)
+    ax.errorbar(data_z, data_mag, yerr=err, linestyle="None", ms=20, alpha=0.8)
     return
 
 
@@ -22,6 +22,17 @@ def plot_model(ax, model, cosmoparams, **kwargs):
     return
 
 
+def plot_difference(ax, model, params1, params2, **kwargs):
+    zrange = np.linspace(0.01, 1, 200)
+    mags1 = np.array([model(i, params1) for i in zrange])
+    mags2 = np.array([model(i, params2) for i in zrange])
+    delta_mags = mags2 - mags1
+    ax.plot(zrange, delta_mags, **kwargs)
+    return
+
+
+
+
 def main_plot():
     # universe models: (H0, omega_m, omega_lambda)
     flat_lcdm_params = (67.7, 0.31, 0.69)
@@ -30,11 +41,11 @@ def main_plot():
 
     model = model_maker.basic_model
 
-    data = data_maker.get_data(model, flat_lcdm_params)
+    data, sigma_data = data_maker.get_data(model, flat_lcdm_params)
 
     fig, ax = plt.subplots()
 
-    plot_data(ax, data)
+    plot_data(ax, data, sigma_data[1])
     plot_model(ax, model, flat_lcdm_params, linestyle=':', c='black')
 
     plot_model(ax, model, open_matter_params, linestyle=':', c='blue')
@@ -44,10 +55,11 @@ def main_plot():
     plt.xlabel("z")
     plt.ylabel("$\mu$")
     plt.xscale("log")
-    plt.xlim(0.01, 1)
+    plt.xlim(0.09, 1)
     plt.ylim(32.5, 45)
 
     plt.show()
 
 
-main_plot()
+if __name__ == "__main__":
+    main_plot()

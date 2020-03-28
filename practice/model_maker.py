@@ -12,7 +12,6 @@ def basic_model(z, cosmoparams):
 
 
 def distance_modulus(luminosity_distance):
-    print(luminosity_distance)
     return 5 * np.log10(luminosity_distance / 10.)
 
 

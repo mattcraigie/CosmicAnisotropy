@@ -8,13 +8,27 @@ def get_data(model, cosmoparams):
     n = 100
 
     # generate SN and apply model
-    z = np.random.random_sample([n])
+    z = np.random.random_sample([n]) * 0.9 + 0.1
     mags = np.array([model(i, cosmoparams) for i in z])
-    print(mags)
     # adding noise
-    sigma = 0.1  # mag
-    noise = np.random.normal(0.01, sigma, n)
-    mags += noise
+    mags += noise_normal(n)
 
     data = np.array([z, mags])
-    return data
+
+    sigma_z = np.ones(n) * 0.001
+    sigma_mags = np.random.normal(0.1, 0.05, n)
+    sigma_data = np.array([sigma_z, sigma_mags])
+
+    return data, sigma_data
+
+# Types of uncertainty on the magntiudes
+
+
+def noise_normal(n):
+    centre = 0.0
+    sigma = 0.1  # mag
+    noise = np.random.normal(centre, sigma, n)
+    return noise
+
+def noise_skew(n):
+    return None
