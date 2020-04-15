@@ -11,7 +11,8 @@ def plot_data(ax, data, err):
     data_z = data[0]
     data_mag = data[1]
 
-    ax.errorbar(data_z, data_mag, yerr=err, linestyle="None", ms=20, alpha=0.8)
+    ax.errorbar(data_z, data_mag, yerr=err, linestyle="None", ms=20, alpha=0.5, c='red')
+    ax.scatter(data_z, data_mag, marker='o', s=5, c='red', alpha=0.5)
     return
 
 
@@ -31,6 +32,16 @@ def plot_difference(ax, model, params1, params2, **kwargs):
     return
 
 
+def plot_difference_data(ax, model, params, data, err, **kwargs):
+    # can either be logged or unlogged
+    data_z = data[0]
+    data_mu = data[1]
+    delta_mu = data_mu - np.array([model(i, params) for i in data_z])
+
+
+    ax.errorbar(data_z, delta_mu, yerr=err, linestyle="None", ms=20, alpha=0.5, **kwargs)
+    ax.scatter(data_z, delta_mu,  marker='o', s=5, alpha=0.5, **kwargs)
+    return
 
 
 def main_plot():

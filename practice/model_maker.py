@@ -17,14 +17,27 @@ def distance_modulus(luminosity_distance):
 
 def hubble_parameter(zprime, cosmoparams):
     H0, omega_m, omega_lambda = cosmoparams
-    w = -1.0
-    return H0 * np.sqrt(omega_m * (1+zprime)**3 + omega_lambda * (1+zprime)**(3*(1+w)))
+    omega_k = 1 - omega_m - omega_lambda
+    w = -0.978
+    return H0 * np.sqrt(omega_m * (1+zprime)**3 + omega_lambda * (1+zprime)**(3*(1+w)) + omega_k * (1+zprime)**2)
 
 
 def luminosity_distance(z, cosmoparams):
     # quad likes to unpack when you supply args so they're in a list to input
     integral, _ = quad(lambda x: 1 / hubble_parameter(x, cosmoparams), 0., z)
-    lum_dist_mpc = (1+z) * c * integral
+    comoving_distance = c * integral
+
+    H0, omega_m, omega_lambda = cosmoparams
+    omega_k = 1 - omega_m - omega_lambda
+
+    if omega_k > 0:  # hyperbolic
+        d_M = c / H0 * np.sinh(np.sqrt(np.abs(omega_k)) * comoving_distance * H0 / c) / np.sqrt(np.abs(omega_k))
+    elif omega_k < 0:  # spherical
+        d_M = c / H0 * np.sin(np.sqrt(np.abs(omega_k)) * comoving_distance * H0 / c) / np.sqrt(np.abs(omega_k))
+    else:
+        d_M = comoving_distance
+
+    lum_dist_mpc = (1+z) * d_M
     return lum_dist_mpc * 1000000
 
 
