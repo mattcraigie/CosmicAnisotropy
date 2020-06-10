@@ -1,0 +1,53 @@
+#!/bin/bash
+#SBATCH --job-name=MC_DES_SN_2_ANALYSE_ALL_OMW
+#SBATCH --time=1:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=broadwl
+#SBATCH --output=/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/output.log
+#SBATCH --account=pi-rkessler
+#SBATCH --mem=20GB
+
+cd /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW
+
+
+echo "Executing parse_cosmomc.py"
+python parse_cosmomc.py input.yml
+if [ $? -ne 0 ]; then
+    echo FAILURE > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/parse_cosmomc.done
+else
+    echo SUCCESS > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/parse_cosmomc.done
+fi
+
+echo "Executing plot_cosmomc.py"
+python plot_cosmomc.py input.yml
+if [ $? -ne 0 ]; then
+    echo FAILURE > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/plot_cosmomc.done
+else
+    echo SUCCESS > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/plot_cosmomc.done
+fi
+
+echo "Executing plot_errbudget.py"
+python plot_errbudget.py input.yml
+if [ $? -ne 0 ]; then
+    echo FAILURE > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/plot_errbudget.done
+else
+    echo SUCCESS > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/plot_errbudget.done
+fi
+
+echo "Executing parse_biascor.py"
+python parse_biascor.py input.yml
+if [ $? -ne 0 ]; then
+    echo FAILURE > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/parse_biascor.done
+else
+    echo SUCCESS > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/parse_biascor.done
+fi
+
+echo "Executing plot_biascor.py"
+python plot_biascor.py input.yml
+if [ $? -ne 0 ]; then
+    echo FAILURE > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/plot_biascor.done
+else
+    echo SUCCESS > /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/plot_biascor.done
+fi

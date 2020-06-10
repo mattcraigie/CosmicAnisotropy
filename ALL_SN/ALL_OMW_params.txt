@@ -1,0 +1,15 @@
+\begin{table}
+    \centering
+    \caption{}
+    \label{tab:model_params}
+    \begin{tabular}{ccc}
+        \hline
+		Model & $\Omega_m\ \mathrm{Blinded}$ & $w\ \mathrm{Blinded}$ \\ 
+		\hline
+		(SN + PRIOR) ALL 5YR ALL & $\left( 299.5^{+9.7}_{-10.4} \right) \times 10^{-3}$ & $-0.664^{+0.076}_{-0.093}$ \\ 
+		(SN + PRIOR) ALL 5YR NOSYS & $\left( 298.5^{+10.4}_{-9.8} \right) \times 10^{-3}$ & $-0.747^{+0.055}_{-0.068}$ \\ 
+		(SN + PRIOR) ALL 5YR SCATTER & $\left( 304.7^{+8.5}_{-11.6} \right) \times 10^{-3}$ & $-0.736^{+0.054}_{-0.068}$ \\ 
+		(SN + PRIOR) ALL 5YR CLASSIFICATION & $\left( 301.3^{+9.6}_{-10.5} \right) \times 10^{-3}$ & $-0.694^{+0.053}_{-0.059}$ \\ 
+		\hline
+    \end{tabular}
+\end{table}

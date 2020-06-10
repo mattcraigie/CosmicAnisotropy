@@ -1,0 +1,54 @@
+[    INFO |     parse_cosmomc.py:123]   Creating chain consumer object
+[    INFO |     parse_cosmomc.py: 93]   Loading in data from original CosmoMC files
+[    INFO |     parse_cosmomc.py: 46]   Looking for chains in folder /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains
+[    INFO |     parse_cosmomc.py: 50]   8 chains found for basename /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_0
+[    INFO |     parse_cosmomc.py: 64]   Blinding column w
+[    INFO |     parse_cosmomc.py: 64]   Blinding column om
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column om in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column ol
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column ol in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegam
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegal
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column omegal in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py:113]   Chain for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_0 has shape (139628, 2)
+[    INFO |     parse_cosmomc.py:114]   Labels for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_0 are ['$\\Omega_m\\ \\mathrm{Blinded}$', '$w\\ \\mathrm{Blinded}$']
+[    INFO |     parse_cosmomc.py: 93]   Loading in data from original CosmoMC files
+[    INFO |     parse_cosmomc.py: 46]   Looking for chains in folder /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains
+[    INFO |     parse_cosmomc.py: 50]   8 chains found for basename /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_1
+[    INFO |     parse_cosmomc.py: 64]   Blinding column w
+[    INFO |     parse_cosmomc.py: 64]   Blinding column om
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column om in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column ol
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column ol in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegam
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegal
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column omegal in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py:113]   Chain for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_1 has shape (86538, 2)
+[    INFO |     parse_cosmomc.py:114]   Labels for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_1 are ['$\\Omega_m\\ \\mathrm{Blinded}$', '$w\\ \\mathrm{Blinded}$']
+[    INFO |     parse_cosmomc.py: 93]   Loading in data from original CosmoMC files
+[    INFO |     parse_cosmomc.py: 46]   Looking for chains in folder /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains
+[    INFO |     parse_cosmomc.py: 50]   8 chains found for basename /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_2
+[    INFO |     parse_cosmomc.py: 64]   Blinding column w
+[    INFO |     parse_cosmomc.py: 64]   Blinding column om
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column om in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column ol
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column ol in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegam
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegal
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column omegal in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py:113]   Chain for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_2 has shape (103070, 2)
+[    INFO |     parse_cosmomc.py:114]   Labels for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_2 are ['$\\Omega_m\\ \\mathrm{Blinded}$', '$w\\ \\mathrm{Blinded}$']
+[    INFO |     parse_cosmomc.py: 93]   Loading in data from original CosmoMC files
+[    INFO |     parse_cosmomc.py: 46]   Looking for chains in folder /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains
+[    INFO |     parse_cosmomc.py: 50]   8 chains found for basename /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_3
+[    INFO |     parse_cosmomc.py: 64]   Blinding column w
+[    INFO |     parse_cosmomc.py: 64]   Blinding column om
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column om in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column ol
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column ol in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegam
+[    INFO |     parse_cosmomc.py: 64]   Blinding column omegal
+[ WARNING |     parse_cosmomc.py: 71]   Cannot find blinding column omegal in list of names ['omegam', 'w']
+[    INFO |     parse_cosmomc.py:113]   Chain for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_3 has shape (47718, 2)
+[    INFO |     parse_cosmomc.py:114]   Labels for /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_prior_omw_3 are ['$\\Omega_m\\ \\mathrm{Blinded}$', '$w\\ \\mathrm{Blinded}$']
+[    INFO |     parse_cosmomc.py:147]   Finishing gracefully

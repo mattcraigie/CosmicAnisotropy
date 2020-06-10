@@ -1,0 +1,16 @@
+\begin{table}
+    \centering
+    \caption{}
+    \label{tab:model_params}
+    \begin{tabular}{ccc}
+        \hline
+		Model & $\Omega_m\ \mathrm{Blinded}$ & $w\ \mathrm{Blinded}$ \\ 
+		\hline
+		(SN + PRIOR) ALL ALL FIELDS ALL & $\left( 299.3^{+10.3}_{-10.0} \right) \times 10^{-3}$ & $-0.664^{+0.077}_{-0.091}$ \\ 
+		(SN + PRIOR) ALL X FIELDS ALL & $\left( 296.6^{+10.9}_{-9.0} \right) \times 10^{-3}$ & $-0.60\pm 0.12$ \\ 
+		(SN + PRIOR) ALL S FIELDS ALL & $0.302\pm 0.010$ & $-0.80^{+0.23}_{-0.28}$ \\ 
+		(SN + PRIOR) ALL E FIELDS ALL & $\left( 299.8^{+11.7}_{-8.6} \right) \times 10^{-3}$ & $-0.95^{+0.24}_{-0.35}$ \\ 
+		(SN + PRIOR) ALL C FIELDS ALL & $\left( 302.5^{+10.4}_{-9.7} \right) \times 10^{-3}$ & $-0.58^{+0.12}_{-0.14}$ \\ 
+		\hline
+    \end{tabular}
+\end{table}

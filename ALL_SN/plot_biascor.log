@@ -1,0 +1,139 @@
+[    INFO |    make_summary_file: 52]   Creating summary file
+[   DEBUG |    make_summary_file: 60]   Read /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/w_summary.csv, contents are:            VERSION       w  wsig_marg      OM  ...      wran     OMran    label  name
+0  SALT2mu_FITJOBS -1.6587     0.0576  0.5498  ...  105462.0  793343.0  DEFAULT   5YR
+
+[1 rows x 12 columns]
+[    INFO |             blind_df: 41]   Blinding columns w in dataframe
+[   DEBUG |   parse_fitres_files: 71]   FITRES_INPUT is ['/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT000_MUOPT000.FITRES']
+[   DEBUG |   parse_fitres_files: 72]   FITRES_PARSED is ['5YR_1_FITOPT0_MUOPT0.fitres']
+[    INFO |   parse_fitres_files: 75]   Parsing fitres file /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT000_MUOPT000.FITRES into 5YR_1_FITOPT0_MUOPT0.fitres
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT000_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT000_MUOPT001.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT000_MUOPT002.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT001_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT002_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT003_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT004_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT005_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT006_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT007_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT008_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT009_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT010_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT011_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT012_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT013_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT014_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT015_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT016_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT017_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT018_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT019_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT020_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT021_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT022_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT023_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT024_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT025_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT026_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT027_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT028_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT029_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT030_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT031_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT032_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT033_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT034_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT035_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT036_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT037_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT038_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT039_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT040_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT041_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT042_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT043_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT044_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT045_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT046_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT047_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT048_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT049_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT050_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT051_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT052_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT053_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT054_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT055_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT056_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT057_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT058_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT059_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT060_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT061_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT062_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT063_MUOPT000.M0DIF
+[   DEBUG |        parse_m0diffs: 88]   Parsing m0diff /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT064_MUOPT000.M0DIF
+[    INFO |        parse_m0diffs:115]   Saving m0diffs to all_biascor_m0diffs.csv
+[    INFO |             <module>:129]   Finishing gracefully
+[    INFO |             <module>:362]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:295]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0.png
+[    INFO |     make_m0diff_plot:301]   Making m0diff plot
+[    INFO |             <module>:378]   Finishing gracefully
+[    INFO |             <module>:362]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   ERROR |             <module>:380]   No module named 'astropy'
+Traceback (most recent call last):
+  File "plot_biascor.py", line 371, in <module>
+    make_hubble_plot(f, m0diff_file, p, args)
+  File "plot_biascor.py", line 159, in make_hubble_plot
+    from astropy.cosmology import FlatwCDM
+ModuleNotFoundError: No module named 'astropy'
+[    INFO |             <module>:362]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:295]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |     make_m0diff_plot:301]   Making m0diff plot
+[    INFO |             <module>:378]   Finishing gracefully
+[    INFO |             <module>:362]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:295]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |     make_m0diff_plot:301]   Making m0diff plot
+[    INFO |             <module>:378]   Finishing gracefully
+[    INFO |             <module>:362]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:295]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |     make_m0diff_plot:301]   Making m0diff plot
+[    INFO |             <module>:378]   Finishing gracefully
+[    INFO |             <module>:362]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:295]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |     make_m0diff_plot:301]   Making m0diff plot
+[    INFO |             <module>:378]   Finishing gracefully
+[    INFO |             <module>:363]   Group 5YR has df shape (1, 12)
+[    INFO |       plot_all_files: 56]   Plotting all files
+[    INFO |    plot_scatter_comp: 78]   Creating scatter plots
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:296]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |     make_m0diff_plot:302]   Making m0diff plot
+[    INFO |             <module>:379]   Finishing gracefully
+[    INFO |             <module>:363]   Group 5YR has df shape (1, 12)
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:296]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |             <module>:379]   Finishing gracefully
+[    INFO |             <module>:363]   Group 5YR has df shape (1, 12)
+[    INFO |     make_hubble_plot:149]   Making Hubble plot
+[   DEBUG |     make_hubble_plot:296]   Saving Hubble plot to 5YR_1_FITOPT0_MUOPT0_2.png
+[    INFO |             <module>:379]   Finishing gracefully

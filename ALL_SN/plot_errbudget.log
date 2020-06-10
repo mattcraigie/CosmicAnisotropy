@@ -1,0 +1,5 @@
+[    INFO |    plot_errbudget.py: 75]   Making Error Budgets
+[    INFO |    plot_errbudget.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_ALL.csv.gz
+[    INFO |    plot_errbudget.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_NOSYS.csv.gz
+[    INFO |    plot_errbudget.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_SCATTER.csv.gz
+[    INFO |    plot_errbudget.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_CLASSIFICATION.csv.gz

@@ -1,0 +1,60 @@
+{
+  "COSMOMC": {
+    "INPUT_FILES": [
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_omw_1",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_omw_2",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/8_COSMOMC/SN_OMW_ALL_5YR/chains/sn_omw_3"
+    ],
+    "PARSED_FILES": [
+      "(SN) ALL_5YR_ALL.csv.gz",
+      "(SN) ALL_5YR_NOSYS.csv.gz",
+      "(SN) ALL_5YR_SCATTER.csv.gz",
+      "(SN) ALL_5YR_CLASSIFICATION.csv.gz"
+    ],
+    "PARAMS": [
+      "omegam",
+      "w"
+    ],
+    "SHIFT": false,
+    "PRIOR": null,
+    "NAMES": [
+      "(SN) ALL 5YR ALL",
+      "(SN) ALL 5YR NOSYS",
+      "(SN) ALL 5YR SCATTER",
+      "(SN) ALL 5YR CLASSIFICATION"
+    ]
+  },
+  "BIASCOR": {
+    "WFIT_SUMMARY_INPUT": [
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/6_BIASCOR/5YR/output/w_summary.csv"
+    ],
+    "WFIT_SUMMARY_OUTPUT": "all_biascor.csv",
+    "FITRES_INPUT": [
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/6_BIASCOR/5YR/output/SALT2mu_FITJOBS/SALT2mu_FITOPT000_MUOPT000.FITRES"
+    ],
+    "FITRES_PROB_COLS": [
+      "PROB_SNNTRAIN_TRAININGSIM"
+    ],
+    "FIIRES_PARSED": [
+      "5YR_/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN/6_BIASCOR/5YR/output/1_FITOPT0_MUOPT0.fitres"
+    ],
+    "M0DIFF_INPUTS": [],
+    "M0DIFF_PARSED": "all_biascor_m0diffs.csv"
+  },
+  "OUTPUT_NAME": "ALL_OMW",
+  "BLIND": [
+    "w",
+    "om",
+    "ol",
+    "omegam",
+    "omegal"
+  ],
+  "LCFIT": {
+    "DATA_FITRES_INPUT": [],
+    "SIM_FITRES_INPUT": [],
+    "DATA_FITRES_PARSED": [],
+    "SIM_FITRES_PARSED": [],
+    "IA_TYPES": []
+  }
+}

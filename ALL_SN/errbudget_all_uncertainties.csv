@@ -1,0 +1,5 @@
+index,$\Omega_m\ \mathrm{Blinded}$ avg,$w\ \mathrm{Blinded}$ avg,$\Omega_m\ \mathrm{Blinded}$ std,$w\ \mathrm{Blinded}$ std,name,covopt
+0,0.2990,-0.7591,0.0100,0.0616,(SN + PRIOR) ALL 5YR,NOSYS
+0,0.2991,-0.6789,0.0100,0.0849,(SN + PRIOR) ALL 5YR,ALL
+0,0.3032,-0.7477,0.0100,0.0608,(SN + PRIOR) ALL 5YR,SCATTER
+0,0.3008,-0.6997,0.0099,0.0561,(SN + PRIOR) ALL 5YR,CLASSIFICATION

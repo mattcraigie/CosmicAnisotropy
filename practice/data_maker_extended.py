@@ -47,7 +47,7 @@ def noise_normal(n):
 def noise_skew(n):
     noise = skewnorm.rvs(20, size=n)
     noise = noise - np.mean(noise)
-    noise = noise * 0.016 * 100
+    noise = noise * 0.016
     print(np.std(noise))
     return noise
 

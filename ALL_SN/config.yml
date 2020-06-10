@@ -1,0 +1,8 @@
+CONFIG:
+  MASK_BIASCOR: 5YR
+  MASK_COSMOMC: OMW
+OUTPUT:
+  done_file: /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/done.txt
+  hash_file: /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW/hash.txt
+  name: ALL_OMW
+  output_dir: /scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_DES_SN_2/9_ANALYSE/ALL_OMW

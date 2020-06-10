@@ -1,0 +1,15 @@
+[    INFO |plot_hubblediagram.py:247]   Creating chain consumer object
+[ WARNING |plot_hubblediagram.py: 44]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |plot_hubblediagram.py: 44]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_NOSYS.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |plot_hubblediagram.py: 44]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_SCATTER.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |plot_hubblediagram.py: 44]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_5YR_CLASSIFICATION.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[    INFO |plot_hubblediagram.py:299]   Hello something is happening
+[   ERROR |plot_hubblediagram.py:314]   zip argument #1 must support iteration
+Traceback (most recent call last):
+  File "plot_hubblediagram.py", line 309, in <module>
+    for f, p in zip(fitres_files, prob_cols):
+TypeError: zip argument #1 must support iteration

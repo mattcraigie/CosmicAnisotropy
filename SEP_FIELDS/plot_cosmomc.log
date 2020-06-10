@@ -1,0 +1,13 @@
+[    INFO |      plot_cosmomc.py: 55]   Creating chain consumer object
+[ WARNING |      plot_cosmomc.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_ALL_FIELDS_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:248]   Adding chain with defined parameters
+[ WARNING |      plot_cosmomc.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_X_FIELDS_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:248]   Adding chain with defined parameters
+[ WARNING |      plot_cosmomc.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_S_FIELDS_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:248]   Adding chain with defined parameters
+[ WARNING |      plot_cosmomc.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_E_FIELDS_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:248]   Adding chain with defined parameters
+[ WARNING |      plot_cosmomc.py: 43]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_C_FIELDS_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:248]   Adding chain with defined parameters
+[   DEBUG |           plotter.py:144]   Plotting surfaces for 5 chains
+[    INFO |      plot_cosmomc.py:101]   Finishing gracefully

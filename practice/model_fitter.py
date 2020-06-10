@@ -35,9 +35,9 @@ model = model_maker.basic_model
 
 data, sigma_data, data_cut, sigma_data_cut = data_maker_extended.get_data(model, flat_lcdm_params)
 
-H0_range = np.linspace(67, 79, 10)
-omega_m_range = np.linspace(0.30, 0.35, 10)
-omega_lambda_range = np.linspace(0.7, 0.65, 10)
+H0_range = np.linspace(50, 100, 11)
+omega_m_range = np.linspace(0, 1, 21)
+omega_lambda_range = np.linspace(0.75, 2, 26)
 
 combinations = np.array(np.meshgrid(H0_range, omega_m_range, omega_lambda_range)).T.reshape(-1, 3)
 
@@ -101,11 +101,24 @@ print(best_fit_params)
 # difference between best fit and lcdm
 fig, ax = plt.subplots()
 
+####--------- using the lcdm as the baseline
 # best fit (i.e. flat line)
-hubble_diagram.plot_difference(ax, model, best_fit_params, best_fit_params,  linestyle='-', c='black', linewidth=2)
+hubble_diagram.plot_difference(ax, model, flat_lcdm_params, flat_lcdm_params,  linestyle='-', c='black', linewidth=2)
 
 # lambda CDM
-hubble_diagram.plot_difference(ax, model, best_fit_params, flat_lcdm_params,  linestyle='--', c='deepskyblue', linewidth=2)
+hubble_diagram.plot_difference(ax, model, flat_lcdm_params, best_fit_params,  linestyle='--', c='deepskyblue', linewidth=2)
+
+# Data
+hubble_diagram.plot_difference_data(ax, model, flat_lcdm_params, data, sigma_data[1], c='blue')
+hubble_diagram.plot_difference_data(ax, model, flat_lcdm_params, data_cut, sigma_data_cut[1], c='red')
+
+####--------- using the best fit as the baseline
+#
+# # best fit (i.e. flat line)
+# hubble_diagram.plot_difference(ax, model, best_fit_params, best_fit_params,  linestyle='-', c='black', linewidth=2)
+#
+# # lambda CDM
+# hubble_diagram.plot_difference(ax, model, best_fit_params, flat_lcdm_params,  linestyle='--', c='deepskyblue', linewidth=2)
 
 # fixed params
 # hubble_diagram.plot_difference(ax, model, best_fit_params, params_1,  linestyle='--', c='green', alpha=0.5)
@@ -115,9 +128,9 @@ hubble_diagram.plot_difference(ax, model, best_fit_params, flat_lcdm_params,  li
 # hubble_diagram.plot_difference(ax, model, best_fit_params, marginalised_1,  linestyle=':', c='orange', linewidth=2)
 # hubble_diagram.plot_difference(ax, model, best_fit_params, marginalised_2,  linestyle=':', c='green', linewidth=2)
 
-# Data
-hubble_diagram.plot_difference_data(ax, model, best_fit_params, data, sigma_data[1], c='blue')
-hubble_diagram.plot_difference_data(ax, model, best_fit_params, data_cut, sigma_data_cut[1], c='red')
+# # Data
+# hubble_diagram.plot_difference_data(ax, model, best_fit_params, data, sigma_data[1], c='blue')
+# hubble_diagram.plot_difference_data(ax, model, best_fit_params, data_cut, sigma_data_cut[1], c='red')
 
 
 plt.title("Residuals from best fit")

@@ -1,0 +1,6 @@
+[    INFO |    plot_errbudget.py: 75]   Making Error Budgets
+[   ERROR |    plot_errbudget.py:105]   list index out of range
+Traceback (most recent call last):
+  File "plot_errbudget.py", line 78, in <module>
+    base, base_index = [(b, i) for i, b in enumerate(budget_labels) if b in ["NOSYS", "STAT", "STATONLY"]][0]
+IndexError: list index out of range
