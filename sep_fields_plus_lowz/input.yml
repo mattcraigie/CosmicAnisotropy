@@ -1,18 +1,18 @@
 {
   "COSMOMC": {
     "INPUT_FILES": [
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_ALLFIELD/chains/sn_prior_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_XFIELD/chains/sn_prior_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_CFIELD/chains/sn_prior_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_SFIELD/chains/sn_prior_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_EFIELD/chains/sn_prior_omw_0"
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_ALLFIELD/chains/sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_XFIELD/chains/sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_CFIELD/chains/sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_SFIELD/chains/sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_EFIELD/chains/sn_omw_0"
     ],
     "PARSED_FILES": [
-      "(SN + PRIOR) ALL_ALLFIELD_ALL.csv.gz",
-      "(SN + PRIOR) ALL_XFIELD_ALL.csv.gz",
-      "(SN + PRIOR) ALL_CFIELD_ALL.csv.gz",
-      "(SN + PRIOR) ALL_SFIELD_ALL.csv.gz",
-      "(SN + PRIOR) ALL_EFIELD_ALL.csv.gz"
+      "(SN) ALL_ALLFIELD_ALL.csv.gz",
+      "(SN) ALL_XFIELD_ALL.csv.gz",
+      "(SN) ALL_CFIELD_ALL.csv.gz",
+      "(SN) ALL_SFIELD_ALL.csv.gz",
+      "(SN) ALL_EFIELD_ALL.csv.gz"
     ],
     "PARAMS": [
       "omegam",
@@ -21,11 +21,11 @@
     "SHIFT": false,
     "PRIOR": null,
     "NAMES": [
-      "(SN + PRIOR) ALL ALLFIELD ALL",
-      "(SN + PRIOR) ALL XFIELD ALL",
-      "(SN + PRIOR) ALL CFIELD ALL",
-      "(SN + PRIOR) ALL SFIELD ALL",
-      "(SN + PRIOR) ALL EFIELD ALL"
+      "(SN) ALL ALLFIELD ALL",
+      "(SN) ALL XFIELD ALL",
+      "(SN) ALL CFIELD ALL",
+      "(SN) ALL SFIELD ALL",
+      "(SN) ALL EFIELD ALL"
     ]
   },
   "BIASCOR": {
@@ -2943,7 +2943,13 @@
     "M0DIFF_PARSED": "all_biascor_m0diffs.csv"
   },
   "OUTPUT_NAME": "ALL_OMW",
-  "BLIND": [],
+  "BLIND": [
+    "w",
+    "om",
+    "ol",
+    "omegam",
+    "omegal"
+  ],
   "LCFIT": {
     "DATA_FITRES_INPUT": [],
     "SIM_FITRES_INPUT": [],

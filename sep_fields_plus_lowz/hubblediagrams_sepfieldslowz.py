@@ -365,6 +365,9 @@ def make_hubble_plot_combined(fitres_files, m0diff_file, prob_col_names, fit_par
             resid_ax.plot(zs, all_distmod - all_distmod, c="k", zorder=-1, lw=0.5, alpha=0.7)
             continue
 
+        if field_letter != 'E':
+            continue
+
         df = pd.read_csv(fitres_file, delim_whitespace=True, comment="#")
         dfm = pd.read_csv(m0diff_file)
         # data cuts

@@ -3265,3 +3265,62 @@ KeyError: 'ALL'
 [    INFO |hubblediagrams_sepfieldslowz.py:315]   Making Hubble plot
 [   DEBUG |hubblediagrams_sepfieldslowz.py:421]   Saving combined Hubble plot to hubble_combined.png
 [    INFO |hubblediagrams_sepfieldslowz.py:514]   Finishing gracefully
+[    INFO |hubblediagrams_sepfieldslowz.py:457]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN + PRIOR) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[    INFO |hubblediagrams_sepfieldslowz.py:315]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:427]   Saving combined Hubble plot to hubble_combined.png
+[    INFO |hubblediagrams_sepfieldslowz.py:520]   Finishing gracefully
+[    INFO |hubblediagrams_sepfieldslowz.py:457]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |          analysis.py:491]   Parameter $\Omega_m\ \mathrm{Blinded}$ in chain (SN) ALL EFIELD ALL is not constrained
+[    INFO |hubblediagrams_sepfieldslowz.py:315]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:427]   Saving combined Hubble plot to hubble_combined.png
+[    INFO |hubblediagrams_sepfieldslowz.py:520]   Finishing gracefully
+[    INFO |hubblediagrams_sepfieldslowz.py:457]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |          analysis.py:491]   Parameter $\Omega_m\ \mathrm{Blinded}$ in chain (SN) ALL EFIELD ALL is not constrained
+[    INFO |hubblediagrams_sepfieldslowz.py:315]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:427]   Saving combined Hubble plot to hubble_combined.png
+[    INFO |hubblediagrams_sepfieldslowz.py:520]   Finishing gracefully
+[    INFO |hubblediagrams_sepfieldslowz.py:460]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 63]   Loading in pre-saved CSV file from (SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:264]   Adding chain with defined parameters
+[ WARNING |          analysis.py:491]   Parameter $\Omega_m\ \mathrm{Blinded}$ in chain (SN) ALL EFIELD ALL is not constrained
+[    INFO |hubblediagrams_sepfieldslowz.py:315]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:430]   Saving combined Hubble plot to hubble_combined.png
+[    INFO |hubblediagrams_sepfieldslowz.py:523]   Finishing gracefully
