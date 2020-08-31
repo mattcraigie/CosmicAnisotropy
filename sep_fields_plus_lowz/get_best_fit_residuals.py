@@ -15,60 +15,6 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit, minimize
 
 
-def fail(msg, condition=True):
-    if condition:
-        logging.error(msg)
-        raise ValueError(msg)
-
-
-def setup_logging():
-    fmt = "[%(levelname)8s |%(filename)21s:%(lineno)3d]   %(message)s"
-    handler = logging.StreamHandler(sys.stdout)
-    logging.basicConfig(level=logging.DEBUG, format=fmt, handlers=[handler, logging.FileHandler(
-        "../ALL_SN/plot_cosmomc.log")])
-    logging.getLogger("matplotlib").setLevel(logging.ERROR)
-
-
-def get_arguments():
-    # Set up command line arguments
-    parser = argparse.ArgumentParser()
-    parser.add_argument("input_file", help="Input yml file", type=str)
-    args = parser.parse_args()
-
-    with open(args.input_file, "r") as f:
-        config = yaml.safe_load(f)
-    config.update(config["COSMOMC"])
-
-    if config.get("NAMES") is not None:
-        assert len(config["NAMES"]) == len(config["PARSED_FILES"]), (
-            "You should specify one name per base file you pass in." + f" Have {len(config['PARSED_FILES'])} base names and {len(config['NAMES'])} names"
-        )
-    return config
-
-
-def get_arguments_2():
-    # For some reason this is different for biascor and cosmomc plot scrips but I'm just gonna use both of them separately for now bc lazy
-    # Set up command line arguments
-    parser = argparse.ArgumentParser()
-    parser.add_argument("input_file", help="Input yml file", type=str)
-    args = parser.parse_args()
-
-    with open(args.input_file, "r") as f:
-        config = yaml.safe_load(f)
-    config.update(config["BIASCOR"])
-
-    return config
-
-
-def load_output(basename):
-    if os.path.exists(basename):
-        logging.warning(f"Loading in pre-saved CSV file from {basename}")
-        df = pd.read_csv(basename)
-        return df["_weight"].values, df["_likelihood"].values, df.iloc[:, 2:].to_numpy(), list(df.columns[2:])
-    else:
-        return None
-
-
 def make_hubble_plot_combined(fitres_files, m0diff_file, prob_col_names, fit_params):
     blinding = True
 
@@ -223,76 +169,103 @@ def make_hubble_plot_combined(fitres_files, m0diff_file, prob_col_names, fit_par
     return
 
 
+def load_biascor(fname):
+    bcor_res = pd.read_csv(fname, usecols=['name', 'OM', 'OM_sig', 'w', 'wsig_marg'])
+    bcor_res['name'] = [n[:n.find('FIELD')] for n in bcor_res['name'].values]
+    bcor_res = bcor_res.set_index('name')
+    return bcor_res
+
+
+def get_fitres_files(location):
+    dirs = []
+    for file in os.listdir(location):
+        if file.endswith(".fitres"):
+            dirs.append(os.path.join(location, file))
+    return dirs
+
+
+def get_hubble_residuals(best_fits, fitres_files):
+    om = best_fits.loc['ALL']['OM']
+    w = best_fits.loc['ALL']['w']
+
+    df = pd.read_csv(fitres_files[0], delim_whitespace=True, comment="#")
+
+    # apply CC cut
+    df = df[df['PROBCC_BEAMS'] < 0.1]
+
+    z = df["zHD"]
+    mu = df["MU"]
+    muerr = df['MUERR']
+
+    mu, resid = correct_vshift(z, mu, muerr, om, w)
+
+    return
+
+
+def correct_vshift(z_values, mu_values, muerr_values, om, w):
+    """Using a manual chisq fit to correct the vshift, since there is no value specified. I arbitrarily pick H0=70 and
+    correct from there."""
+
+
+    model_shifted = lambda x, z: FlatwCDM(H0=70, Om0=om, w0=w).distmod(z).value + x
+    fit_chisq = lambda x, z, mu, muerr: np.sum((mu - model_shifted(x, z)) ** 2 / (muerr) ** 2)
+
+    res = minimize(fit_chisq, x0=np.array([0.1]), args=(z_values, mu_values, muerr_values))
+    corrected_shift = res['x'][0]
+    print(corrected_shift)
+    mu_values_corrected = mu_values - corrected_shift
+
+    print(mu_values.values)
+    print(mu_values_corrected.values)
+
+    residuals = mu_values_corrected - mu_shifted(corrected_shift, z_values)
+    print(np.average(residuals, weights=1/muerr_values**2))
+
+    plt.axhline(0)
+    plt.scatter(z_values, residuals, s=1)
+    plt.show()
+
+    plt.hist(residuals)
+    plt.show()
+
+
+    return mu_values_corrected, residuals
+
+
+def plot_or_something(best_fits, fitres_files):
+    df = pd.read_csv(fitres_files, delim_whitespace=True, comment="#")
+    field_name = fitres_files[fitres_files.find('\\') + 1:fitres_files.find('FIELD')]
+
+    print(best_fits)
+
+    om = best_fits.loc[field_name]['OM']
+    w = best_fits.loc[field_name]['w']
+
+
 if __name__ == "__main__":
-    setup_logging()
-    args = get_arguments()
-    args2 = get_arguments_2()
-    try:
-        if args.get("PARSED_FILES"):
-            logging.info("Creating chain consumer object")
-            c = ChainConsumer()
-            do_full = False
-            biases = {}
-            b = 1
-            truth = {"$\\Omega_m$": 0.3, "$w\\ \\mathrm{Blinded}$": -1.0, "$\\Omega_\\Lambda$": 0.7}
-            shift_params = truth if args.get("SHIFT") else None
-
-            for index, basename in enumerate(args.get("PARSED_FILES")):
-                if args.get("NAMES"):
-                    name = args.get("NAMES")[index].replace("_", " ")
-                else:
-                    name = os.path.basename(basename).replace("_", " ")
-                # Do smarter biascor
-                if ")" in name:
-                    key = name.split(")", 1)[1]
-                else:
-                    key = name
-                if key not in biases:
-                    biases[key] = b
-                    b += 1
-                bias_index = biases[key]
-
-                linestyle = "-" if name.lower().endswith("all") else "--"
-
-                weights, likelihood, chain, labels = load_output(basename)
-                if args.get("PRIOR"):
-                    prior = args.get("PRIOR", 0.01)
-                    logging.info(f"Applying prior width {prior} around 0.3")
-                    om_index = labels.index("$\\Omega_m$")
-                    from scipy.stats import norm
-
-                    prior = norm.pdf(chain[:, om_index], loc=0.3, scale=prior)
-                    weights *= prior
-
-                c.add_chain(chain, weights=weights, parameters=labels, name=name, posterior=likelihood, shift_params=shift_params, linestyle=linestyle)
-
-            # Write all our glorious output
-            c.configure(plot_hists=False)
-            param_bounds = c.analysis.get_summary()  # gets a summary, there's one for each chain, which in this case is each set of COVOPTS
 
 
-            # I want the best fit for everything combined and then the best fit for each individual one
-            # Order: All, X, S, E, C
-            fields = ['ALL', 'X', 'S', 'E', 'C']
-            fit_params = {}
+    # how I want this to run
+    best_fits = load_biascor('all_biascor.csv')
+    fitres_files = get_fitres_files(".")
 
-            for i, pb in enumerate(param_bounds):
-                try:
-                    fit_params[fields[i]] = (pb['$\\Omega_m\\ \\mathrm{Blinded}$'][1], pb['$w\\ \\mathrm{Blinded}$'][1])
-                except KeyError:
-                    fit_params[fields[i]] = (pb['$\\Omega_m$'][1], pb['$w$'][1])
+    hr = get_hubble_residuals(best_fits, fitres_files)
+
+    exit()
+    fit_params = {}
+
+    for i, pb in enumerate(param_bounds):
+        try:
+            fit_params[fields[i]] = (pb['$\\Omega_m\\ \\mathrm{Blinded}$'][1], pb['$w\\ \\mathrm{Blinded}$'][1])
+        except KeyError:
+            fit_params[fields[i]] = (pb['$\\Omega_m$'][1], pb['$w$'][1])
 
 
 
-            m0diff_file = args2.get("M0DIFF_PARSED")
-            fitres_files = args2.get("FITRES_PARSED")
-            prob_cols = args2.get("FITRES_PROB_COLS")
-            # for f, p in zip(fitres_files, prob_cols):
-            # make_hubble_plot_simple(f, m0diff_file, best_cosmology=(omega_m_best, w_best))
-            make_hubble_plot_combined(fitres_files, m0diff_file, prob_cols, fit_params)
+    m0diff_file = args2.get("M0DIFF_PARSED")
+    fitres_files = args2.get("FITRES_PARSED")
+    prob_cols = args2.get("FITRES_PROB_COLS")
+    # for f, p in zip(fitres_files, prob_cols):
+    # make_hubble_plot_simple(f, m0diff_file, best_cosmology=(omega_m_best, w_best))
+    make_hubble_plot_combined(fitres_files, m0diff_file, prob_cols, fit_params)
 
-
-        logging.info("Finishing gracefully")
-    except Exception as e:
-        logging.exception(str(e))
-        raise e

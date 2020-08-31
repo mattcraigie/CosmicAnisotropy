@@ -1,18 +1,18 @@
 {
   "COSMOMC": {
     "INPUT_FILES": [
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_ALLFIELD/chains/sn_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_XFIELD/chains/sn_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_CFIELD/chains/sn_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_SFIELD/chains/sn_omw_0",
-      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_EFIELD/chains/sn_omw_0"
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_ALLFIELD/chains/nohubble_sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_XFIELD/chains/nohubble_sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_CFIELD/chains/nohubble_sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_SFIELD/chains/nohubble_sn_omw_0",
+      "/scratch/midway2/rkessler/PIPPIN_OUTPUT/MC_SEP_FIELDS_LOWZ/8_COSMOMC/SN_OMW_ALL_EFIELD/chains/nohubble_sn_omw_0"
     ],
     "PARSED_FILES": [
-      "(SN) ALL_ALLFIELD_ALL.csv.gz",
-      "(SN) ALL_XFIELD_ALL.csv.gz",
-      "(SN) ALL_CFIELD_ALL.csv.gz",
-      "(SN) ALL_SFIELD_ALL.csv.gz",
-      "(SN) ALL_EFIELD_ALL.csv.gz"
+      "(NOHUBBLE + SN) ALL_ALLFIELD_ALL.csv.gz",
+      "(NOHUBBLE + SN) ALL_XFIELD_ALL.csv.gz",
+      "(NOHUBBLE + SN) ALL_CFIELD_ALL.csv.gz",
+      "(NOHUBBLE + SN) ALL_SFIELD_ALL.csv.gz",
+      "(NOHUBBLE + SN) ALL_EFIELD_ALL.csv.gz"
     ],
     "PARAMS": [
       "omegam",
@@ -21,11 +21,11 @@
     "SHIFT": false,
     "PRIOR": null,
     "NAMES": [
-      "(SN) ALL ALLFIELD ALL",
-      "(SN) ALL XFIELD ALL",
-      "(SN) ALL CFIELD ALL",
-      "(SN) ALL SFIELD ALL",
-      "(SN) ALL EFIELD ALL"
+      "(NOHUBBLE + SN) ALL ALLFIELD ALL",
+      "(NOHUBBLE + SN) ALL XFIELD ALL",
+      "(NOHUBBLE + SN) ALL CFIELD ALL",
+      "(NOHUBBLE + SN) ALL SFIELD ALL",
+      "(NOHUBBLE + SN) ALL EFIELD ALL"
     ]
   },
   "BIASCOR": {
