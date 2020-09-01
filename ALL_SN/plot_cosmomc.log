@@ -7651,3 +7651,215 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 [    INFO |     hubble_binned.py: 75]   Making Hubble plot
 [    INFO |     hubble_binned.py: 75]   Making Hubble plot
 [    INFO |     hubble_binned.py: 75]   Making Hubble plot
+[    INFO |hubblediagrams_sepfieldslowz.py:232]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[    INFO |hubblediagrams_sepfieldslowz.py: 76]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:215]   Saving combined Hubble plot to hubble_combined.png
+[   ERROR |hubblediagrams_sepfieldslowz.py:297]   invalid command name "."
+Traceback (most recent call last):
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2773, in _wait_cursor_for_draw_cm
+    self.set_cursor(cursors.WAIT)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "hubblediagrams_sepfieldslowz.py", line 292, in <module>
+    make_hubble_plot_combined(fitres_files, m0diff_file, prob_cols, fit_params)
+  File "hubblediagrams_sepfieldslowz.py", line 216, in make_hubble_plot_combined
+    fig.savefig(fp, dpi=300, transparent=True, bbox_inches="tight")
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\figure.py", line 2203, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2063, in print_figure
+    renderer = _get_renderer(
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 1534, in _get_renderer
+    print_method(io.BytesIO())
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 514, in print_png
+    FigureCanvasAgg.draw(self)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 390, in draw
+    with RendererAgg.lock, \
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2776, in _wait_cursor_for_draw_cm
+    self.set_cursor(self._lastCursor)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+[    INFO |hubblediagrams_sepfieldslowz.py:233]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[    INFO |hubblediagrams_sepfieldslowz.py: 76]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:216]   Saving combined Hubble plot to hubble_combined.png
+[   ERROR |hubblediagrams_sepfieldslowz.py:298]   invalid command name "."
+Traceback (most recent call last):
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2773, in _wait_cursor_for_draw_cm
+    self.set_cursor(cursors.WAIT)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "hubblediagrams_sepfieldslowz.py", line 293, in <module>
+    make_hubble_plot_combined(fitres_files, m0diff_file, prob_cols, fit_params)
+  File "hubblediagrams_sepfieldslowz.py", line 217, in make_hubble_plot_combined
+    fig.savefig(fp, dpi=300, transparent=True, bbox_inches="tight")
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\figure.py", line 2203, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2063, in print_figure
+    renderer = _get_renderer(
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 1534, in _get_renderer
+    print_method(io.BytesIO())
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 514, in print_png
+    FigureCanvasAgg.draw(self)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 390, in draw
+    with RendererAgg.lock, \
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2776, in _wait_cursor_for_draw_cm
+    self.set_cursor(self._lastCursor)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+[    INFO |hubblediagrams_sepfieldslowz.py:234]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[    INFO |hubblediagrams_sepfieldslowz.py: 76]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:217]   Saving combined Hubble plot to hubble_combined.png
+[   ERROR |hubblediagrams_sepfieldslowz.py:299]   invalid command name "."
+Traceback (most recent call last):
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2773, in _wait_cursor_for_draw_cm
+    self.set_cursor(cursors.WAIT)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "hubblediagrams_sepfieldslowz.py", line 294, in <module>
+    make_hubble_plot_combined(fitres_files, m0diff_file, prob_cols, fit_params)
+  File "hubblediagrams_sepfieldslowz.py", line 218, in make_hubble_plot_combined
+    fig.savefig(fp, dpi=300, transparent=True, bbox_inches="tight")
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\figure.py", line 2203, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2063, in print_figure
+    renderer = _get_renderer(
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 1534, in _get_renderer
+    print_method(io.BytesIO())
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 514, in print_png
+    FigureCanvasAgg.draw(self)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 390, in draw
+    with RendererAgg.lock, \
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2776, in _wait_cursor_for_draw_cm
+    self.set_cursor(self._lastCursor)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+[    INFO |hubblediagrams_sepfieldslowz.py:236]   Creating chain consumer object
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_ALLFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_XFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_CFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_SFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[ WARNING |hubblediagrams_sepfieldslowz.py: 65]   Loading in pre-saved CSV file from (NOHUBBLE + SN) ALL_EFIELD_ALL.csv.gz
+[   DEBUG |     chainconsumer.py:261]   Adding chain with defined parameters
+[    INFO |hubblediagrams_sepfieldslowz.py: 76]   Making Hubble plot
+[   DEBUG |hubblediagrams_sepfieldslowz.py:219]   Saving combined Hubble plot to hubble_combined.png
+[   ERROR |hubblediagrams_sepfieldslowz.py:301]   invalid command name "."
+Traceback (most recent call last):
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2773, in _wait_cursor_for_draw_cm
+    self.set_cursor(cursors.WAIT)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "hubblediagrams_sepfieldslowz.py", line 296, in <module>
+    make_hubble_plot_combined(fitres_files, m0diff_file, prob_cols, fit_params)
+  File "hubblediagrams_sepfieldslowz.py", line 220, in make_hubble_plot_combined
+    fig.savefig(fp, dpi=300, transparent=True, bbox_inches="tight")
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\figure.py", line 2203, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2063, in print_figure
+    renderer = _get_renderer(
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 1534, in _get_renderer
+    print_method(io.BytesIO())
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 514, in print_png
+    FigureCanvasAgg.draw(self)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\backend_agg.py", line 390, in draw
+    with RendererAgg.lock, \
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backend_bases.py", line 2776, in _wait_cursor_for_draw_cm
+    self.set_cursor(self._lastCursor)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\site-packages\matplotlib\backends\_backend_tk.py", line 544, in set_cursor
+    window.configure(cursor=cursord[cursor])
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1637, in configure
+    return self._configure('configure', cnf, kw)
+  File "D:\Matt\Programming\Anaconda3\envs\honenv\lib\tkinter\__init__.py", line 1627, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name "."

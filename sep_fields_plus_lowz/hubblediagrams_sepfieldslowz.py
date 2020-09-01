@@ -130,6 +130,7 @@ def make_hubble_plot_combined(fitres_files, m0diff_file, prob_col_names, fit_par
 
             res = minimize(bestfitchisq, x0=np.array([0.1]), args=(z, mu, muerr))
             corrected_shift = res['x'][0]
+            print(corrected_shift)
             all_distmod = mu_shifted(corrected_shift, zs)
 
 
@@ -184,6 +185,8 @@ def make_hubble_plot_combined(fitres_files, m0diff_file, prob_col_names, fit_par
 
         # field best fit
         om, w = fit_params[field_letter]
+        print('\n')
+        print(field_letter, om, w)
 
         # curve fit
         # mu_shifted = lambda z0, shift: FlatwCDM(H0=70, Om0=om, w0=w).distmod(z0).value + shift
@@ -200,6 +203,7 @@ def make_hubble_plot_combined(fitres_files, m0diff_file, prob_col_names, fit_par
 
         res = minimize(bestfitchisq, x0=np.array([0.1]), args=(dfz, df["MU"], df["MUERR"]))
         corrected_shift = res['x'][0]
+        print(corrected_shift)
 
         zs = np.linspace(0.01, 1.1, 500)
         distmod = mu_shifted(corrected_shift, zs)
